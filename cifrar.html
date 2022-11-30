@@ -5,27 +5,30 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-<body onload="fnc_traerNombre();" >
+
+<body id="bodyEncode" >
     <div id="root"> <br><br>
       <h1>CONFIDENCIAL</h1>
     </div>
-    <img src="Images/logo_cia.png" class="imgchica"/>
-    <form id="frmcifrar" class="form" >
-      <p>Hola <label type="text" id="lblnomusuario"> </label> 
-      </p>
 
-  
+    <img src="Images/logo_cia.png" class="cimgSmall"/>
+    <form id="frmEncode" class="form" >
+      <p>Hola <label type="text" id="lblNameUser"> </label> </p>
+
     <div>
       Ingrese texto a codificar: <br>
-      <input type="text" id="txtoriginal"> <br><br>
-      <button id="cmdcifrar" onclick="fnc_cifrar()" > CODIFICAR </button>
-        <br><br>
+      <input type="text" id="txtMessage"> <br>
+      Ingrese número de desplazamiento: <input type="text" id="intNumC" size="3"> <br><br>
+      <button id="cmdEncode" > CODIFICAR </button>
+      <br><br>
     </div>
+
     <div>
       Mensaje codificado:<br>
-      <label id="lblcifrado" type="text" class="lblmsjcod" > prueba </label>
+      <label id="lblEncode" type="text" class="clblMsgEncode" >  </label>
     </div>
+
   </form>
-    <script src="index.js" type="text/javascript"></script>
+    <script src="cifrar.js" type="module"></script>
   </body>
 </html>

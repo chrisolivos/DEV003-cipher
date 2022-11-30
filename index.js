@@ -1,46 +1,30 @@
-//import cipher from './cipher.js';
+import cipher from './cipher.js';
+console.log(cipher);
 
-//console.log(cipher);
-
-function fnc_traerNombre() {
-    /*Al cargar la pagina obtine el nombre de la session*/
-   //var nomusuario = sessionStorage.nomusuario;
-   /*asigna el nombre al objeto id Player*/
-   //var element = document.getElementById("DivContenedor");
-   var nombre= document.getElementById('txtusuario').textContent
-  alert('ingreso');
-    document.getElementById('lblnomusuario').innerHTML = nombre;
-       
-      
-}
-
-function entrar() {
+function fncLogin() {
    // alert('ingreso');
   
-    var c = "CODE";
-    var d = "DECO";
-    var response = '';
+    let c = "CODE";
+    let d = "DECO";
+    let response = ''; 
 
-   // if (response != d){ 
-   //     alert("Redireccionando a CODFICAR MENSAJES");  
-   //     location.href = 'cifrar.html';
-   // } else { 
-   ///     alert("Redireccionando a DECODFICAR MENSAJES");
-   // }
-    
-
-    if(document.getElementById("txtusuario").value=='' || document.getElementById("txtpassword").value==''){
+    if(document.getElementById("txtUser").value=='' || document.getElementById("txtPassword").value==''){
         alert("Debes ingresar todos los datos");
     }else{
         response=prompt("Ingresa COD (para codificar mensaje) o DECO (para decodificar mensaje)");
         //validar solo letras, 3 letras mayus
         if (response != d){ 
-            alert("Redireccionando a CODFICAR MENSAJES");  
+            //alert("Redireccionando a CODFICAR MENSAJES");  
+            sessionStorage.nombre = document.getElementById("txtUser").value;
             location.href = 'cifrar.html';
-         } else { 
-            alert("Redireccionando a DECODFICAR MENSAJES");
+         } else {   
+            //alert("Redireccionando a DECODFICAR MENSAJES");
+            sessionStorage.nombre = document.getElementById("txtUser").value;
+            location.href = 'descifrar.html';
          }
        
     }
 }
 
+const botonLogin=document.getElementById("cmdLogin");
+botonLogin.addEventListener("click",fncLogin);
