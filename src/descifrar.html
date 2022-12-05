@@ -12,24 +12,24 @@
     </div>
 
     <img src="Images/logo_cia.png" class="cimgSmall"/>
-    <form id="frmDecode" class="form" >
       <p>Hola <label type="text" id="lblNameUser"> </label> </p>
 
     <div>
       Ingrese texto a decodificar: <br>
       <input type="text" id="txtMessagedeco"> <br>
       Ingrese número de desplazamiento: <br>
-      <input type="text" id="intNumD" > <br><br>
-      <button id="cmdDecode" > CODIFICAR </button>
+      <input type="number" id="intNumD" size="2" min="1" max="50" required > <br><br>
+      <button id="cmdDecode" > DECODIFICAR </button>
       <br><br>
     </div>
 
     <div>
       Mensaje codificado:<br>
-      <label id="lblDecode" type="text" class="clblMsgEncode" >  </label>
+      <label id="lblDecode" type="text" class="clblMsgEncode" >  </label><br><br>
     </div>
-
-  </form>
-    <script src="index.js" type="module"></script>
+    <div>
+      <a href="index.html" class="clink"> Página Principal</a> <a href="cifrar.html" class="clink"> Ir a Codificar mensaje</a>
+    </div>
+    <script src="descifrar.js" type="module"></script>
   </body>
 </html>
