@@ -21,23 +21,17 @@ h1{
     float: center;
     width: 200px;
     height: 200px;
-
   }
 
   .clblUser{
     font-family: 'Courier New', Courier, monospace;
     font-size: 22px;
     font-weight: bold;
-    color:  #f3f1f1;
+    
   }
 
   .cdivLogin{
-    /*alinear al cntro*/
-    /*object-position: center;*/
     margin: auto;
-    /*justify-items: center;
-    justify-self: center;
-    justify-content: center;*/
     width: 300px;
     height: 150px;
 
@@ -47,4 +41,20 @@ h1{
 
   .clink{
     color:#f3f1f1;
+  }
+
+  .ctextBox{
+  border-color: black;
+  border-radius:5px;
+
+  }
+
+  .cbtn:hover{
+    background-color: darkgreen;
+    border-radius:5px;
+    font-weight: bold;
+  }
+
+  .cbtn{
+    border-radius:5px;
   }
