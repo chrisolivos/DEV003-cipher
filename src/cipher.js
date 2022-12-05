@@ -1,75 +1,71 @@
 const cipher = {
   encode: function (pos, text) {
 
-    //const messageArray=string.split(''); recorre string
-
     let messageEncode = "";
     const textMessage = text;
     const lengthMessage = textMessage.length;
-    const position = pos;
-
+    const position = parseInt(pos);
+    //console.log( typeof text);
+    //console.log(typeof pos);
+    
+    if (typeof text !=="string" || typeof position !=="number"){
+      throw new TypeError();
+    }
+    
     let i = 0;
-    let asciiOriginal = 0;
+    let asciiChar = 0;
     let newPosition = '';
 
     for (i = 0; i < lengthMessage; i++) {
-      asciiOriginal = textMessage.charCodeAt(i);
-      newPosition = asciiOriginal + parseInt(position);
-      messageEncode = messageEncode + String.fromCharCode(newPosition);
+      asciiChar = textMessage.charCodeAt(i);
+      //MAYUSCULAS
+      if (asciiChar >=65 && asciiChar<=90 ){
+        //posLetra+ nuevaposicion  %26 (cantidad de letars en el alfabeto
+        newPosition = (((parseInt(asciiChar)-65 + parseInt(position))%26)+65);
+        messageEncode = messageEncode + String.fromCharCode((newPosition));
+      //minusculas
+      }else if(asciiChar >=97 && asciiChar<=122){
+        newPosition =  (((parseInt(asciiChar)-97+ parseInt(position))%26)+97);
+        messageEncode = messageEncode + String.fromCharCode(newPosition);
+        //otros caracteres
+      }else{
+        messageEncode = messageEncode + String.fromCharCode(asciiChar);
+      }
     }
-
     return messageEncode;
-
   },
 
   decode: function (pos, text) {
     let messageDecode = "";
     const textMessage = text;
     const lengthMessage = textMessage.length;
-    const position = pos;
+    const position = parseInt(pos);
 
+    if (typeof textMessage !=="string" || typeof position !=="number"){
+      throw new TypeError();
+    }
+    
     let i = 0;
-    let asciiOriginal = 0;
+    let asciiChar = 0;
     let newPosition = '';
 
     for (i = 0; i < lengthMessage; i++) {
-      asciiOriginal = textMessage.charCodeAt(i);
-      newPosition = asciiOriginal - parseInt(position);
-      messageDecode = messageDecode + String.fromCharCode(newPosition);
-    }
-
-    return messageDecode;
-
-  },
-
-  fncLogin: function (user, pass, opcion) {
-
-    const c = 'CODE';
-    const d = 'DECO';
-
-    if (user === '' || pass === '') {
-      alert("Debes ingresar todos los datos");
-    } else {
-      const combo = opcion;
-      if (combo.value === c) {
-        //alert("Redireccionando a CODFICAR MENSAJES");  
-        sessionStorage.nombre = user;
-        location.href = 'cifrar.html';
-      } else if (combo.value === d) {
-        //alert("Redireccionando a DECODFICAR MENSAJES");
-        sessionStorage.nombre = user;
-        location.href = 'descifrar.html';
+      asciiChar = textMessage.charCodeAt(i);
+      //MAYUSCULAS
+      if (asciiChar >=65 && asciiChar<=90 ){
+        //posLetra - nuevaposicion  %26 (cantidad de letars en el alfabeto)
+        newPosition = (((parseInt(asciiChar)-90 - parseInt(position))%26)+90);
+        messageDecode = messageDecode + String.fromCharCode((newPosition));
+      //minusculas
+      }else if(asciiChar >=97 && asciiChar<=122){
+        newPosition =  (((parseInt(asciiChar)-122- parseInt(position))%26)+122);
+        messageDecode = messageDecode + String.fromCharCode(newPosition);
+        //otros caracteres
+      }else{
+        messageDecode = messageDecode + String.fromCharCode(asciiChar);
       }
-
     }
-
-
+    return messageDecode;
   },
-
-  fncUserName: function () {
-    const userName = sessionStorage.nombre;
-    document.getElementById('lblNameUser').innerHTML = userName;
-  }
 }
-
 export default cipher;
