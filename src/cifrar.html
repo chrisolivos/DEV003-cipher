@@ -1,2 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
+<body id="bodyEncode" >
+    <div id="root"> <br><br>
+      <h1>CONFIDENCIAL</h1>
+    </div>
+
+    <img src="Images/logo_cia.png" class="cimgSmall"/>
+    
+      <p>Hola <label type="text" id="lblNameUser" class="clblUser"> </label> </p>
+
+    <div>
+      Ingrese texto a codificar: <br>
+      <input type="text" id="txtMessage" class="ctextBox"> <br>
+      Ingrese número de desplazamiento: <br>
+      <input type="number" id="intNumC" size="2" min="1" max="20" class="ctextBox" >
+      <br><br>
+      <button id="cmdEncode" class="cbtn"> CODIFICAR </button>
+      <br><br>
+    </div>
+
+    <div>
+      Mensaje codificado:<br>
+      <label id="lblEncode" type="text" class="clblMsgEncode" >  </label><br><br>
+    </div>
+    <div>
+      <a href="index.html" class="clink"> Página Principal</a> <a href="descifrar.html" class="clink"> Ir a decodificar mensaje</a>
+    </div>
+    <script src="cifrar.js" type="module"></script>
+  </body>
 </html>
