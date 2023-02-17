@@ -11,23 +11,28 @@
 * [7. Proceso de interacción](#7-proceso-de-interacción)
 * [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
 
-## 1.	Definición
+## 1. Definición
 El proyecto Cipher está desarrollado para la realización de codificación y decodificación de mensajes, según la variación de posición requerida del usuario. [Puedes acceder aquí al proyecto Cipher](https://chrisolivos.github.io/DEV003-cipher/ "Cipher")
-## 2.	Resumen del proyecto
+## 2. Resumen del proyecto
 El presente proyecto fue desarrollado pesando en un servicio de inteligencia, comprendiendo la necesidad de envío y recepción de mensajes bajo una codificación que solo sea conocida por los usuarios implicados. 
-## 3.	Objetivo del usuario
+## 3. Objetivo del usuario
 El objetivo manifestado por los usuarios, fue poder enviar y recibir sus mensajes bajo una codificación a elección propia del desplazamiento de los caracteres.
-## 4.	Resolución de problemas
+## 4. Resolución de problemas
 Con el presente proyecto se les permite una codificación y decodificación de los mensajes, según su elección del nuevo posicionamiento de los caracteres; siendo esto un servicio más personalizado y seguro para la encriptación.
-## 5.	Prototipo
-Imqgen de Login
+## 5. Prototipo
+Imqgen de Login:
+
 ![Imagen de Login](https://github.com/chrisolivos/DEV003-cipher/blob/main/src/Images/Prototipo/login.png)
-Imagen de cifrar
+
+Imagen de cifrar:
+
 ![Imagen de codificar](https://github.com/chrisolivos/DEV003-cipher/blob/main/src/Images/Prototipo/codificar.png)
-Imagen de descifrar
+
+Imagen de descifrar:
+
 ![Imagen de decodificar](https://github.com/chrisolivos/DEV003-cipher/blob/main/src/Images/Prototipo/decodificar.png)
 
-## 6.	Archivos contenidos
+## 6. Archivos contenidos
 -	Carpeta Images: Aquí encontraremos las imágenes utilizadas
 -	Html:
 *	Index: Permite el acceso del usuario mediante un usuario y contraseña (esto es solicitado debido al nivel de seguridad de la entidad)
@@ -42,7 +47,7 @@ Imagen de descifrar
 -	Css:
 *	Style: Encontraremos los estilos de las diferentes páginas.
  
-## 7.	Proceso de interacción
+## 7. Proceso de interacción
 -	Pantalla principal: La primera pantalla nos solicitará ingresar el usuario y su contraseña, de faltar ambos o alguno de los datos, enviará un mensaje solicitando el ingreso de los mismos. Luego de ingresar los datos se procede a seleccionar si desea CIFRAR o DESCIFRAR un mensaje, acto seguido dar clic al botón “Login”
 
 Pantalla de Login:
@@ -66,7 +71,7 @@ Pantalla Decifrado:
 
 ![Pantalla descifrado](https://github.com/chrisolivos/DEV003-cipher/blob/main/src/Images/Terminado/decodificar.png)
 
-## 8.	Objetivos de aprendizaje
+## 8. Objetivos de aprendizaje
 
 ### HTML
 - [x] **Uso de HTML semántico**
