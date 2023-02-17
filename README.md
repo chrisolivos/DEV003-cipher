@@ -45,22 +45,57 @@ Imagen de descifrar
 ## 7.	Proceso de interacción
 -	Pantalla principal: La primera pantalla nos solicitará ingresar el usuario y su contraseña, de faltar ambos o alguno de los datos, enviará un mensaje solicitando el ingreso de los mismos. Luego de ingresar los datos se procede a seleccionar si desea CIFRAR o DESCIFRAR un mensaje, acto seguido dar clic al botón “Login”
 
-Pantalla de Login
+Pantalla de Login:
+
 ![Pantalla de login](https://github.com/chrisolivos/DEV003-cipher/blob/main/src/Images/Terminado/acceso.png)
+
 Pantalla de mensaje al no ingresar datos completos: Usuario y clave
 (No se está validando, solo debe escribir un Usuario y cualquier dato en clave)
+
 ![Pantalla datos vacios](https://github.com/chrisolivos/DEV003-cipher/blob/main/src/Images/Terminado/acceso_error.png)
 
 -	Pantalla de Cifrado: Después de haber seleccionado cifrar, mostrará la pantalla en la cual se podrá ingresar el mensaje a cifrar, también nos permite ir a descifrar o volver a la pantalla inicial. También nos muestra el nombre del usuario que ingresó.
 
-Pantalla Cifrado
+Pantalla Cifrado:
+
 ![Pantalla cifrado](https://github.com/chrisolivos/DEV003-cipher/blob/main/src/Images/Terminado/codificar.png)
 
 -	Pantalla de Descifrado: Después de haber seleccionado descifrar, mostrará la pantalla en la cual se podrá ingresar el mensaje a descifrar, también nos permite ir a cifrar o volver a la pantalla inicial. También nos muestra el nombre del usuario que ingresó.
 
-Pantalla Decifrado
+Pantalla Decifrado:
+
 ![Pantalla descifrado](https://github.com/chrisolivos/DEV003-cipher/blob/main/src/Images/Terminado/decodificar.png)
 
 ## 8.	Objetivos de aprendizaje
 
+### HTML
+- [x] **Uso de HTML semántico**
+### CSS
+- [x] **Uso de selectores de CSS**
+- [x] **Modelo de caja (box model): borde, margen, padding**
+### Web APIs
+- [x] **Uso de selectores del DOM**
+- [x] **Manejo de eventos del DOM (listeners, propagación, delegación)**
+- [x] **Manipulación dinámica del DOM**
+### JavaScript
+- [x] **Tipos de datos primitivos**
+- [x] **Strings (cadenas de caracteres)**
+- [x] **Variables (declaración, asignación, ámbito)**
+- [x] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
+- [x] **Uso de bucles/ciclos (while, for, for..of)**
+- [x] **Funciones (params, args, return)**
+- [x] **Pruebas unitarias (unit tests)**
+- [x] **Módulos de ECMAScript (ES Modules)**
+- [x] **Uso de linter (ESLINT)**
+- [x] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
+### Control de Versiones (Git y GitHub)
+- [x] **Git: Instalación y configuración**
+- [x] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
+- [x] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
+- [x] **GitHub: Despliegue con GitHub Pages**
+### Centrado en el usuario
+- [x] **Diseñar y desarrollar un producto o servicio poniendo a las usuarias en el centro**
+### Diseño de producto
+- [x] **Crear prototipos de alta fidelidad que incluyan interacciones**
+- [x] **Seguir los principios básicos de diseño visual**
 
