@@ -1,5 +1,4 @@
 import iniciar from './main.js';
-
 const botonLogin = document.getElementById("cmdLogin");
 botonLogin.addEventListener("click", function () {
   const user = document.getElementById("txtUser").value;

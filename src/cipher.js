@@ -27,7 +27,8 @@ const cipher = {
       }else if(asciiChar >=97 && asciiChar<=122){
         newPosition =  (((parseInt(asciiChar)-97+ parseInt(position))%26)+97);
         messageEncode = messageEncode + String.fromCharCode(newPosition);
-      }else { 
+        //otros caracteres
+      }else{
         messageEncode = messageEncode + String.fromCharCode(asciiChar);
       }
     }
